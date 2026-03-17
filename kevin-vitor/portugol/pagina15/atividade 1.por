@@ -1,7 +1,9 @@
 /* 
 Autoria: Kevin Fernandes, Vitor Paulielo
+instituição: etec Vasco Antonio Venchiarutti 
 Turma: 1ºC2 
 data: 05 de Março, 2026
+
 
 Descrição: O Haras Cavalos Brilhantes compra cavalos com frequência. Ler a
 quantidade de cavalos adquiridos recentemente, calcular a quantidade de
@@ -11,19 +13,18 @@ novos cavalos e sua respectiva quantidade de ferraduras.
 */ 
  
 
-
 programa
 {
 	
 	funcao inicio()
 	{
-inteiro quantidade_cavalos
-inteiro quantidade_ferraduras
+inteiro qtd_cavalos
+inteiro qtd_ferraduras
 	escreva("digite a quantidade de cavalos adquiridos recentemente: ")
-	leia(quantidade_cavalos)
-     quantidade_ferraduras=(quantidade_cavalos)*4
-     escreva ("A quantidade de cavalos adquiridos foi de:", quantidade_cavalos)
-     escreva("\nserão necessários: "+quantidade_ferraduras+" ferraduras")
+	leia(qtd_cavalos)
+     qtd_ferraduras=(qtd_cavalos)*4
+     escreva ("A quantidade de cavalos adquiridos foi de:", qtd_cavalos)
+     escreva("\nserão necessários: "+qtd_ferraduras+" ferraduras")
 	}
 }
 
@@ -34,7 +35,7 @@ inteiro quantidade_ferraduras
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 374; 
+ * @POSICAO-CURSOR = 712; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

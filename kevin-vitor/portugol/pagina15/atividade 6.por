@@ -1,6 +1,6 @@
 /* 
- * INstituição: EtecVav - VAsco Antonio Vecharutti
 Autoria: Kevin Fernandes, Vitor Paulielo
+instituição: etec Vasco Antonio Venchiarutti 
 Turma: 1ºC2 
 data: 12 de Março, 2026
 

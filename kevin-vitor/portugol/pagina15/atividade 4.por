@@ -1,5 +1,6 @@
 /* 
 Autoria: Kevin Fernandes, Vitor Paulielo
+instituição: etec Vasco Antonio Venchiarutti 
 Turma: 1ºC2 
 data: 05 de Março, 2026
 
