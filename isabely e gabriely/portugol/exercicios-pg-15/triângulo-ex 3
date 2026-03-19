@@ -1,0 +1,27 @@
+/*
+ * Autoria: Isabely Caconde e Gabriely Alves
+*Data: 18/03/2026
+*Instituição: Etecvav
+*Descrição: Ler a base e altura de um triângulo. Calcular e exibir a área do triângulo sabendo que área = base * altura / 2
+ */
+
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro base
+		inteiro altura
+
+		escreva("Qual a base do triangulo?\n")
+		leia(base)
+
+		escreva("Qual a altura do triangulo?\n")
+		leia(altura)
+
+		limpa()
+
+		escreva("\nA area do triangulo é igual a: " , base * altura / 2)
+	}
+}
