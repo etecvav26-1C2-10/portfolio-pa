@@ -1,0 +1,23 @@
+/*
+ * Autoria: Isabely Caconde e Gabriely Alves
+*Data: 26/03/2026
+*Instituição: Etecvav
+*Descrição: Ler o peso de uma pessoa em quilos, calcular e mostrar o peso em gramas.
+*/
+programa
+{
+	
+	funcao inicio()
+	{
+	inteiro peso
+
+	escreva("Qual o seu peso em quilos?/n ")
+	leia(peso)
+
+	limpa()
+
+	escreva("\n Você pesa em gramas: " + peso * 1000)
+	
+          
+	}
+}
