@@ -1,0 +1,27 @@
+/*
+ * Autoria: Isabely Caconde e Gabriely Alves
+*Data: 26/03/2026
+*Instituição: Etecvav
+*Descrição:O motorista de aplicativo abastece o tanque do seu carro com um determinado valor em reais. Ler o preço do litro de combustível e o valor que pretende abastecer. Calcular a quantidade de litro no abastecimento e exibir os dados lidos e o valor calculado.
+*/
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro preco_gasolina
+		inteiro litros_gasolina
+
+		escreva("Quantos litros de gasolina deseja colocar? ")
+          leia(litros_gasolina)
+
+          preco_gasolina = litros_gasolina * 6
+
+          limpa()
+
+          escreva("Foram ", litros_gasolina, "litros de gasolina, e deverá pagar R$ ", preco_gasolina)
+	
+          
+         
+	}
+}
