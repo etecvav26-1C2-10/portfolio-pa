@@ -1,0 +1,35 @@
+/*
+ * Autoria: Isabely Caconde e Gabriely Alves
+*Data: 26/03/2026
+*Instituição: Etecvav
+*Descrição: Ler a base menor, a base maior e a altura. Calcular e mostrara área de um trapézio: (* base menor + base maior) + altura / 2.
+*/
+programa
+{
+	
+	funcao inicio()
+	{
+	real base_maior
+	real base_menor
+	real altura
+
+	escreva("Qual é a medida da base menor do trapézio?\n ")
+	leia(base_menor)
+
+	limpa()
+
+	escreva("Qual a medida da base maior do trapézio?\n ")
+	leia(base_maior)
+
+	limpa()
+
+	escreva("Qual a medida da altura desse trapézio?\n")
+	leia(altura)
+
+	limpa()
+
+	     escreva("\nA área do trapézio é: ", base_menor + base_maior + altura / 2)
+	
+          
+	}
+}
