@@ -1,0 +1,27 @@
+/*
+* Autoria: Gabriely Alves e Isabely Caconde
+*Data: 28/03/2026
+*Instituição: Etecvav
+*Descrição: Ler o peso de um boi e o percentual de engorda. Calcular e exibir o novo peso do boi.
+*/
+programa
+{
+	
+	funcao inicio()
+	{
+	     real peso
+		real percentual_peso
+		
+		escreva("Qual o peso do boi?\n")
+		leia(peso)
+
+		limpa()
+
+		escreva("Qual foi o percentual de engorda do boi?\n")
+		leia(percentual_peso)
+
+		limpa()
+
+		escreva("O peso atual do boi é de:\n", peso + percentual_peso)
+	}
+}
