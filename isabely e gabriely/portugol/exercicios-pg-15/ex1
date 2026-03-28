@@ -1,0 +1,28 @@
+/*
+* Autoria: Gabriely Alves e Isabely Caconde
+* Data: 12/03/2026
+* Instituição: etecvav
+* Descrição: O Haras Cavalos Brilhantes compra cavalos com frequência. Ler a quantidade de cavalos adquiridos recentemente, calcular a quantidade de ferraduras necessárias para os novos cavalos e exibir a quantidade de novos cavalos e sua respectiva quantidade de ferraduras.
+*/
+programa
+
+{
+	
+	funcao inicio()
+	{
+		inteiro quantidade_cavalos
+		inteiro quantidade_ferraduras
+		
+		escreva("Qual a quantidade de cavalos adquiridos?\n")
+		leia(quantidade_cavalos)	
+
+		limpa()
+		
+		quantidade_ferraduras = quantidade_cavalos * 4
+
+		limpa()
+		
+		escreva("\nSão necessarias: ", quantidade_ferraduras," ferraduras")
+
+     }
+}
