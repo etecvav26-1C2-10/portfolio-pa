@@ -1,0 +1,67 @@
+/*
+* Autoria: Gabriely Alves e Isabely Caconde
+*Data: 28/03/2026
+*Instituição: Etecvav
+*Descrição: O caixa do supermercado recebe uma certa quantidade de moedas por dia. Ler a quantidade de moedas recebidas de acordo com cada um dos valores 1, 5, 10, 25 e 50 centavos, e ainda moedas de 1 real. Calcular e exibir o valor recebido de cada um dos tipos de moeda e a soma total em moedas.
+*/
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro moeda_1
+		inteiro moeda_5
+		inteiro moeda_10
+		inteiro moeda_25
+		inteiro moeda_50
+		inteiro moeda1
+		real total
+
+		escreva("Quantas moedas de 1 centavo foram recebidas hoje?\n")
+		leia(moeda_1)
+
+		limpa()
+
+		escreva("Quantas moedas de 5 centavos foram recebidas hoje?\n")
+		leia(moeda_5)
+
+    limpa()
+
+    escreva("Quantas moedas de 10 centavos foram recebidas hoje?\n")
+		leia(moeda_10)
+
+    limpa()
+
+    escreva("Quantas moedas de 25 centavos foram recebidas hoje?\n")
+		leia(moeda_25)   
+
+		limpa()
+
+		escreva("Quantas moedas de 50 centavos foram recebidas hoje?\n")
+		leia(moeda_50) 
+
+		limpa()
+
+		escreva("Quantas moedas de 1 real foram recebidas hoje?\n")
+		leia(moeda1)
+
+    limpa()
+          
+		total = (moeda_1 * 0.01) +
+		(moeda_5 * 0.05) +
+		(moeda_10 * 0.10) +
+		(moeda_25 * 0.25) +
+		(moeda_50 * 0.50) +
+		(moeda1 * 1.0)
+          
+		escreva("\n1 centavo: R$ " + (moeda_1 * 0.01))
+    escreva("\n5 centavos: R$ " + (moeda_5 * 0.05))
+    escreva("\n10 centavos: R$ " + (moeda_10 * 0.10))
+    escreva("\n25 centavos: R$ " + (moeda_25 * 0.25))
+    escreva("\n50 centavos: R$ " + (moeda_50 * 0.50))
+    escreva("\n1 real: R$ " + (moeda1 * 1.0))
+
+    escreva("\nO total do caixa é de: R$ " + total)
+         
+	}
+}
