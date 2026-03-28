@@ -1,0 +1,33 @@
+/*
+* Autoria: Gabriely Alves e Isabely Caconde
+*Data: 28/03/2026
+*Instituição: Etecvav
+*Descrição: O vendedor recebe seu salário fixo acrescido de comissões de vendas, calculada a partir do percentual do valor de suas vendas. Ler o salário fixo do vendedor, o valor de suas vendas e o percentual sobre as vendas. Calcular e exibir o salário final do vendedor.
+*/
+programa
+{
+	
+	funcao inicio()
+	{
+		real salario_fixo
+		real valor_vendas
+		real percentual
+
+		escreva("Qual é o seu salário?\n ")
+		leia(salario_fixo)
+
+    limpa()
+          
+		escreva("Qual foi o valor da comissão das suas vendas?\n ")
+		leia(valor_vendas)
+
+    limpa()
+          
+		escreva("Qual o percentual sobre as vendas?\n ")
+		leia(percentual)
+
+		limpa()
+
+		escreva("Seu sálario final é de ", valor_vendas * percentual + salario_fixo)
+	}
+}
