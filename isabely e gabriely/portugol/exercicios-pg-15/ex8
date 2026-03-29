@@ -18,12 +18,12 @@ programa
 
     limpa()
           
-		escreva("Qual foi o valor da comissão das suas vendas?\n ")
+		escreva("Qual foi o valor das vendas?\n ")
 		leia(valor_vendas)
 
     limpa()
           
-		escreva("Qual o percentual sobre as vendas?\n ")
+		escreva("Qual o percentual da comissão das vendas?\n ")
 		leia(percentual)
 
 		limpa()
