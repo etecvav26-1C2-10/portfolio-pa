@@ -1,3 +1,15 @@
+Kevin Silva Fernandes - Exercício 1 - Pergunta conceitual
+Explique com suas próprias palavras:
+
+  o que é um algoritmo
+  qual é a relação entre lógica de programação e algoritmos
+
+Apresente também um exemplo simples de algoritmo do cotidiano.
+
+R:ALgoritmo é uma sequência de intruções para resolver um problema ou excutar certas ações
+
+R: A logica é o racínio que o codigo deve seguir enquanto o Algoritmo é a sequência de passos para executar um programa.
+
 Vitor Moretti - Exercício 2 
 Pergunta de aplicação
 Considere o seguinte problema:
@@ -12,17 +24,17 @@ Primeiro é preciso saber o valor dos três numeros, depois, verificar se o prim
 programa {
   funcao inicio() {
     
-    inteiro num1 ,num2, num3
+  inteiro num1 ,num2, num3
 
-    escreva ("digite o primeiro numero ")
+  escreva ("digite o primeiro numero ")
     leia (num1)
     limpa()
 
-     escreva ("digite o segundo numero ")
+  escreva ("digite o segundo numero ")
     leia (num2)
     limpa()
 
-     escreva ("digite o terceiro numero ")
+  escreva ("digite o terceiro numero ")
     leia (num3)
     limpa()
 
