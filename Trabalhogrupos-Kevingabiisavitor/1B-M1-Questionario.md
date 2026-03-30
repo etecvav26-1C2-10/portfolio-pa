@@ -20,6 +20,7 @@ Se possível, represente esse algoritmo em pseudocódigo ou Portugol.
 
 R: Primeiro é preciso saber o valor dos três numeros, depois, verificar se o primeiro é maior que os demais, assim como com o segundo e o terceiro. Também é preciso comparar os três numeros e verificar se todos são iguais. 
 
+```
 programa {
   funcao inicio() {
     
@@ -71,6 +72,7 @@ programa {
     
   }
 }
+```
 
 **Gabriely Alves-Exercício 3**
 
