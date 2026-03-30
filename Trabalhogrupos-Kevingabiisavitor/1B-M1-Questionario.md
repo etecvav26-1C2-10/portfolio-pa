@@ -6,7 +6,7 @@ Explique com suas próprias palavras:
 
 Apresente também um exemplo simples de algoritmo do cotidiano.
 
-R:ALgoritmo é uma sequência de intruções para resolver um problema ou excutar certas ações
+R: Algoritmo é uma sequência de intruções para resolver um problema ou excutar certas ações
 
 R: A logica é o racínio que o codigo deve seguir enquanto o Algoritmo é a sequência de passos para executar um programa.
 
