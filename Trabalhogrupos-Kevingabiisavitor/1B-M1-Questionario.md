@@ -1,5 +1,5 @@
-Kevin Silva Fernandes - Exercício 1 - Pergunta conceitual
-Explique com suas próprias palavras:
+## Kevin Silva Fernandes - Exercício 1 - Pergunta conceitual ##
+- Explique com suas próprias palavras:
 
   o que é um algoritmo
   qual é a relação entre lógica de programação e algoritmos
@@ -10,16 +10,15 @@ R: Algoritmo é uma sequência de intruções para resolver um problema ou excut
 
 R: A logica é o racínio que o codigo deve seguir enquanto o Algoritmo é a sequência de passos para executar um programa.
 
-Vitor Moretti - Exercício 2 
-Pergunta de aplicação
-Considere o seguinte problema:
+## Vitor Moretti - Exercício 2 - Pergunta de aplicação ##
+- Considere o seguinte problema:
 
 Um programa deve receber três números e mostrar qual deles é o maior.
 
 Descreva um algoritmo em linguagem natural para resolver esse problema.
 Se possível, represente esse algoritmo em pseudocódigo ou Portugol.
 
-Primeiro é preciso saber o valor dos três numeros, depois, verificar se o primeiro é maior que os demais, assim como com o segundo e o terceiro. Também é preciso comparar os três numeros e verificar se todos são iguais. 
+R: Primeiro é preciso saber o valor dos três numeros, depois, verificar se o primeiro é maior que os demais, assim como com o segundo e o terceiro. Também é preciso comparar os três numeros e verificar se todos são iguais. 
 
 programa {
   funcao inicio() {
@@ -51,7 +50,7 @@ programa {
     {
       escreva ("o maior numero é " + num1)
 
-    }
+  }
   }
 
   se (num2 > num1) {
@@ -59,7 +58,7 @@ programa {
     {
       escreva ("o maior numero é " + num2)
 
-    }
+  }
   }
 
   se (num3 > num2) {
@@ -67,8 +66,8 @@ programa {
     {
       escreva ("o maior numero é " + num3)
 
-    }
+  }
   }
     
-      }
+  }
 }
