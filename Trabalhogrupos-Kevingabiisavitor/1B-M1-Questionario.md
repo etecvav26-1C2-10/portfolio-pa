@@ -71,3 +71,24 @@ programa {
     
   }
 }
+
+**Gabriely Alves-Exercício 3**
+
+1. O Portugol Studio é um ambiente de desenvolvimento integrado (IDE) gratuito e educacional, desenvolvido em português, ideal para iniciantes. Ele utiliza a linguagem Portugol (pseudocódigo) para ensinar lógica de programação de forma simplificada, permitindo criar algoritmos, console-based programs e até jogos simples sem a complexidade de linguagens reais
+
+```
+  programa
+{
+    funcao inicio()
+    {
+        inteiro numero
+
+        escreva("Digite um número: ")
+        leia(numero)
+
+        escreva("O dobro do número é: ", numero * 2)
+    }
+}
+
+```
+Usar o portugol é fácil e a interface é organizada e facil de entender o programa.
