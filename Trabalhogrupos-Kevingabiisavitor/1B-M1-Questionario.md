@@ -90,6 +90,15 @@ programa {
 
         escreva("O dobro do número é: ", numero * 2)
     }
+Usar o portugol é fácil e a interface é organizada e facil de entender o programa.
+
+**Isabely Caconde-Exercício 4**
+
+1. IDE's, bibliotecas e frameworks são essenciais para produtividade e pela redução de erros, e permite que os programadores foquem no que realmente importa, a lógica do problema. Elas oferecem recursos prontos e automatizações. Por exemplo, uma IDE como Visual Studio Code ajuda com autocompletar, depurar e organizar o código, já frameworks como React ou Django fornecem estruturas prontas para criar aplicações, evitando reinventar funcionalidades comuns como autenticação, rotas e interface; além disso, bibliotecas reutilizam código já testado, o que aumenta a confiabilidade e segurança do sistema.
+
+2. Se os desenvolvedores construíseem os próprios componentes do zero, o desenvolvimento seria muito mais lento, a probabilidade erros iria aumentar significativamente, os projetos seriam mais caros de manter, além de que cada equipe teria sua própria maneira de resolver o problema, gerando inconsistência.
+   Criar um sistema de login do zero exigiria implementar criptografia, validação, armazenamento seguro de senhas etc, com frameworks como Django, isso já vem pronto e testado.
+Outro exemplo é criar interfaces web: sem react, seria necessário manipular diretamente o DOM, o que é mais complexo e propenso a erros.
 }
 
 ```
