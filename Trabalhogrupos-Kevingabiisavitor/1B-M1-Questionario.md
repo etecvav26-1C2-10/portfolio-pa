@@ -90,6 +90,9 @@ programa {
 
         escreva("O dobro do número é: ", numero * 2)
     }
+}
+
+```
 Usar o portugol é fácil e a interface é organizada e facil de entender o programa.
 
 **Isabely Caconde-Exercício 4**
@@ -102,4 +105,4 @@ Outro exemplo é criar interfaces web: sem react, seria necessário manipular di
 }
 
 ```
-Usar o portugol é fácil e a interface é organizada e facil de entender o programa.
+
