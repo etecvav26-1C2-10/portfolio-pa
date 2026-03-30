@@ -74,7 +74,7 @@ programa {
 }
 ```
 
-**Gabriely Alves-Exercício 3**
+##Gabriely Alves-Exercício 3##
 
 1. O Portugol Studio é um ambiente de desenvolvimento integrado (IDE) gratuito e educacional, desenvolvido em português, ideal para iniciantes. Ele utiliza a linguagem Portugol (pseudocódigo) para ensinar lógica de programação de forma simplificada, permitindo criar algoritmos, console-based programs e até jogos simples sem a complexidade de linguagens reais
 
@@ -95,7 +95,7 @@ programa {
 ```
 Usar o portugol é fácil e a interface é organizada e facil de entender o programa.
 
-**Isabely Caconde-Exercício 4**
+##Isabely Caconde-Exercício 4##
 
 1. IDE's, bibliotecas e frameworks são essenciais para produtividade e pela redução de erros, e permite que os programadores foquem no que realmente importa, a lógica do problema. Elas oferecem recursos prontos e automatizações. Por exemplo, uma IDE como Visual Studio Code ajuda com autocompletar, depurar e organizar o código, já frameworks como React ou Django fornecem estruturas prontas para criar aplicações, evitando reinventar funcionalidades comuns como autenticação, rotas e interface; além disso, bibliotecas reutilizam código já testado, o que aumenta a confiabilidade e segurança do sistema.
 
