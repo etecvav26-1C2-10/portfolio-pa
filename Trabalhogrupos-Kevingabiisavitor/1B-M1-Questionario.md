@@ -102,7 +102,5 @@ Usar o portugol é fácil e a interface é organizada e facil de entender o prog
 2. Se os desenvolvedores construíseem os próprios componentes do zero, o desenvolvimento seria muito mais lento, a probabilidade erros iria aumentar significativamente, os projetos seriam mais caros de manter, além de que cada equipe teria sua própria maneira de resolver o problema, gerando inconsistência.
    Criar um sistema de login do zero exigiria implementar criptografia, validação, armazenamento seguro de senhas etc, com frameworks como Django, isso já vem pronto e testado.
 Outro exemplo é criar interfaces web: sem react, seria necessário manipular diretamente o DOM, o que é mais complexo e propenso a erros.
-}
 
-```
 
