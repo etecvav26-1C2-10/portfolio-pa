@@ -1,6 +1,6 @@
 /* 
 Autoria: Kevin Fernandes, Vitor Paulielo
-instituição: etec Vasco Antonio Venchiarutti 
+instituição: Etec Vasco Antonio Venchiarutti 
 Turma: 1ºC2 
 data: 05 de Março, 2026
 
@@ -27,17 +27,3 @@ inteiro qtd_ferraduras
      escreva("\nserão necessários: "+qtd_ferraduras+" ferraduras")
 	}
 }
-
-
-
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 712; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
