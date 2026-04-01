@@ -7,7 +7,6 @@
  ano lido, informando se é ou não é bissexto.
 */ 
 
-```
 programa {
   funcao inicio() {
     
@@ -24,4 +23,4 @@ programa {
     }
   }
 }
-```
+
