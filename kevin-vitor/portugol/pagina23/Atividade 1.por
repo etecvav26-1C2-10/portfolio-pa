@@ -1,3 +1,11 @@
+/*
+ Data: 01/04/2026
+ instituição: Etec Vasco Antonio Venchiarutti
+ Feito por: Vitor Moretti
+
+ Descrição: Ler um ano e verificar se o ano é bissexto. Exibir o
+ ano lido, informando se é ou não é bissexto.
+*/ 
 programa {
   funcao inicio() {
     
@@ -14,3 +22,4 @@ programa {
     }
   }
 }
+
