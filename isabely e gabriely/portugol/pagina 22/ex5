@@ -1,0 +1,35 @@
+/*
+* Autoria: Gabriely Alves e Isabely Caconde
+*Data: 02/04/2026
+*Instituição: Etecvav
+*Descrição: Ler o preço do etanol e da gasolina e indicar qual combustível é mais vantajoso.
+*/
+programa
+{
+	
+	funcao inicio()
+	{
+		real gasolina
+		real etanol
+		real valor
+
+		escreva("Qual o preço da gasolina?\n")
+		leia(gasolina)
+
+		limpa()
+
+		escreva("Qual o preço do etanol?\n")
+		leia(etanol)
+
+          limpa()
+          
+		valor = gasolina * 70 / 100
+
+		se (etanol <= valor) {
+			escreva("Abasteça com etanol")
+		}
+          senao {
+          	escreva("Use gasolina")
+          }
+	  }
+}
