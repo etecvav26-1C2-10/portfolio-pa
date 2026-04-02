@@ -1,0 +1,27 @@
+/*
+* Autoria: Gabriely Alves e Isabely Caconde
+*Data: 02/04/2026
+*Instituição: Etecvav
+*Descrição: Ler a idade do passageiro e determinar o tipo de tarifa
+*/
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro idade
+
+		escreva("Qual a idade do passageiro?\n")
+		leia(idade)
+
+		se (idade <= 2) {
+			escreva("A passagem é gratuita")
+		}
+		senao se (idade <= 12) {
+			escreva("A passagem é meia")
+		}
+		senao {
+			escreva("O valor da passagem é inteiro")
+		}
+	}
+}
