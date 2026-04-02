@@ -1,6 +1,13 @@
+/* Nome: Vitor Moretti 
+ *  turma:1ºC2
+ *  Etec Vasco Antônio Venchiarutti
+
+ *  Descriçaõ: Se o preço do etanol for 70% do preço da gasolina, recomendar o etanol, caso contrário, recomendar gasolina
+ */
+
+
 programa
-{	
-	
+{
 	funcao inicio()
 	{
 	real etanol, gasolina, valor 
