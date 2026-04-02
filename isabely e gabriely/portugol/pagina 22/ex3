@@ -28,6 +28,8 @@ programa
 
 		valor_final = valor - desconto
 
+        limpa()
+
 		escreva("O valor final da compra é ", valor_final)
 	}
 }
