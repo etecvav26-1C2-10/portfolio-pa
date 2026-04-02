@@ -1,0 +1,33 @@
+/*
+* Autoria: Gabriely Alves e Isabely Caconde
+*Data: 02/04/2026
+*Instituição: Etecvav
+*Descrição: Ler três números e verificar se eles formam um triângulo. Caso formem, identificar se é equilátero, isósceles ou escaleno
+*/
+programa
+{
+	
+	funcao inicio()
+	{
+		real valor
+		real desconto
+		real valor_final
+
+		escreva("Qual o valor da compra?\n")
+		leia(valor)
+
+		se (valor < 100) {
+			desconto = 0
+		}
+		senao se (valor <= 500) {
+			desconto = valor * 10 / 100
+		}
+		senao {
+			desconto = valor * 20 / 100
+		}
+
+		valor_final = valor - desconto
+
+		escreva("O valor final da compra é ", valor_final)
+	}
+}
