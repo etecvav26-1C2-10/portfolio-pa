@@ -1,0 +1,29 @@
+/*
+* Autoria: Gabriely Alves e Isabely Caconde
+*Data: 02/04/2026
+*Instituição: Etecvav
+*Descrição: Ler o tempo de permanência de um veículo em um estacionamento e calcular o valor a pagar
+*/
+programa
+{
+	
+	funcao inicio()
+	{
+		real tempo
+		real preco
+
+		escreva("Quantas horas o carro permaneceu no estacionamento?\n")
+		leia(tempo)
+
+		se (tempo <= 2) {
+			preco = tempo * 2
+		}
+		senao {
+			preco = (2 * 2) + ((tempo - 2) * 1)
+		}
+
+		limpa()
+
+		escreva("O valor a pagar é de R$ ", preco)
+	}
+}
