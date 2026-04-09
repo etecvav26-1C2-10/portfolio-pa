@@ -1,0 +1,32 @@
+/*
+* Autoria: Gabriely Alves e Isabely Caconde
+*Data: 09/04/2026
+*Instituição: Etecvav
+*Descrição: Ler um número e verificar se ele é um quadrado perfeito.
+*/
+programa
+{
+inclua biblioteca Matematica --> mat
+	
+	funcao inicio()
+	{
+   
+inteiro numero
+real  raiz
+
+escreva ("Digite um numero\n")
+leia(numero)
+limpa()
+
+raiz = Matematica.raiz(numero, 2.0)
+
+se (raiz == mat.arredondar(raiz, 0)) {
+   escreva(numero, " é uma raiz perfeita")
+}
+senao {
+   escreva(numero, " não é uma raiz perfeita")
+}
+	  
+	}
+	
+}
