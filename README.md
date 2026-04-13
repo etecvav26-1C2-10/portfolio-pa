@@ -10,3 +10,8 @@ O uso do Portugol foi essencial para fortalecer nossa base em programação, fac
 Além disso, o trabalho em grupo contribuiu para o desenvolvimento da colaboração, troca de conhecimentos e construção conjunta das soluções.
 
 Este portfólio representa nosso aprendizado, dedicação e crescimento na área de programação.</p>
+---
+## Pltaforma sendo utilizada:
+<p>
+  <img src="https://img.shields.io/badge/Portugol-Studio-6C4AB6?style=for-the-badge&logo=code&logoColor=white">
+</p>
