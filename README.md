@@ -11,7 +11,7 @@ Além disso, o trabalho em grupo contribuiu para o desenvolvimento da colaboraç
 
 Este portfólio representa nosso aprendizado, dedicação e crescimento na área de programação.</p>
 ---
-## Pltaforma sendo utilizada:
+## Plataforma sendo utilizada:
 <p>
 <img src="https://img.shields.io/badge/Portugol-FF8C00?style=for-the-badge&logo=code&logoColor=white">
 </p>
