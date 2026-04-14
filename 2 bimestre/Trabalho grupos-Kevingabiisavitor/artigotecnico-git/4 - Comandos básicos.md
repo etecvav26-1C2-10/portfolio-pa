@@ -12,7 +12,7 @@ O comando `git init` é usado para iniciar um novo repositório Git em um diret�
 ### Como usar:
 ```bash
 git init
-
+```
 ### O que ele faz:
 Cria uma pasta oculta chamada .git
 Inicializa um repositório vazio no diretório atual.
@@ -27,11 +27,13 @@ Ao transformar um projeto existente em um repositório Git
 O comando git add adiciona arquivos à área de staging (preparação), indicando que eles devem ser incluídos no próximo commit.
 
 ### Como usar:
+```bash
 git add "nome-do-arquivo"
-
+```
 Adicionar todos os arquivos modificados:
+```bash
 git add .
-
+```
 ### O que ele faz:
 Move alterações para a staging area
 Prepara arquivos para serem "commitados"
@@ -45,8 +47,9 @@ Após modificar ou criar arquivos que você deseja versionar
 O comando git commit salva as alterações adicionadas na staging area no histórico do repositório.
 
 ### Como usar:
+```bash
 git commit -m "Mensagem descritiva"
-
+```
 ###O que ele faz:
 Cria um ponto no histórico do projeto
 Armazena uma descrição das mudanças
@@ -61,8 +64,9 @@ Use o modo imperativo (ex: "Adiciona função de login")
 O comando git status mostra o estado atual do repositório.
 
 ### Como usar:
+```bash
 git status
-
+```
 ### O que ele mostra:
 Arquivos modificados
 Arquivos na staging area
@@ -78,16 +82,21 @@ Antes de executar git add ou git commit
 O comando git log exibe o histórico de commits do repositório.
 
 ### Como usar:
+```bash
 git log
-
+```
 ### O que ele mostra:
 Lista de commits
 Autor, data e mensagem de cada commit
 
 ### Opções úteis:
+```bash
 git log --oneline
+```
 Mostra um resumo compacto dos commits
+```bash
 git log --graph
+```
 Exibe um gráfico visual das branches
 
 ## Conclusão
