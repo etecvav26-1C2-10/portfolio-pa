@@ -17,5 +17,5 @@ Este portfólio representa nosso aprendizado, dedicação e crescimento na área
 </p>
 <br>
 <p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="80"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="60"/>
 </p>
