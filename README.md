@@ -16,3 +16,6 @@ Este portfólio representa nosso aprendizado, dedicação e crescimento na área
 <img src="https://img.shields.io/badge/Portugol-FF8C00?style=for-the-badge&logo=code&logoColor=white">
 </p>
 <br>
+<p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="120"/>
+</p>
