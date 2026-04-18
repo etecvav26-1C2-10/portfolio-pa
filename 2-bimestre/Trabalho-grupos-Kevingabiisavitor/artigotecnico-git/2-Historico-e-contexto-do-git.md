@@ -61,3 +61,6 @@ Hoje, o Git é considerado o padrão mundial para controle de versão. Ele é ut
 - Projetos colaborativos diversos
 
 Empresas de tecnologia, startups e até grandes organizações utilizam o Git como parte essencial de seus fluxos de trabalho.
+
+[⬅ voltar](1-Conceito-do-git.md)
+[avançar ➡](3-Instalacao-e-download.md)

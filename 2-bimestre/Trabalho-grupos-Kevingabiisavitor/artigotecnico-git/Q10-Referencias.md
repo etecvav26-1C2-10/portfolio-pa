@@ -32,7 +32,4 @@ As referências usadas para a criação deste artigo foram:
      
         link: https://www.theodinproject.com
 
-
-
-
-    
+[⬅ voltar](Q10-Referencias.md)

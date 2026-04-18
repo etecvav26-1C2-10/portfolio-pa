@@ -108,3 +108,6 @@ git add: prepara arquivos
 git commit: salva alterações
 git status: verifica o estado
 git log: visualiza o histórico
+
+[⬅ voltar](3-Instalacao-e-download.md)
+[avançar ➡](5-Exemplos-praticos.md)

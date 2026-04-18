@@ -13,3 +13,6 @@ Outro ponto importante é o domínio dos comandos básicos, como `git init`, `gi
 Dessa forma, aprender Git e GitHub não é apenas uma habilidade técnica, mas também um diferencial importante no mercado de trabalho, especialmente na área de tecnologia. Essas ferramentas são amplamente utilizadas por empresas e desenvolvedores em todo o mundo.
 
 Por fim, dominar esses conceitos permite ao usuário desenvolver projetos de maneira mais organizada, segura e colaborativa, preparando-o para desafios maiores e para o crescimento contínuo na área de desenvolvimento.
+
+[⬅ voltar](8-Integracao-Git-e-GitHub.md)
+[avançar ➡](Q10-Referencias.md)
