@@ -68,5 +68,13 @@ Após criar a conta, você pode:
 
 ---
 
-[⬅ voltar](6-Github-Conceitos-e-finalidade.md)
-[avançar ➡](8-Integracao-Git-e-GitHub.md)
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="6-Github-Conceitos-e-finalidade.md">⬅ voltar</a>
+      </td>
+    <td align="center">
+      <a href="8-Integracao-Git-e-GitHub.md">avançar ➡</a>
+    </td>
+  </tr>
+</table>

@@ -115,5 +115,13 @@ Agora ele estará pronto para commit.
 
 Esses exemplos mostram como os comandos básicos funcionam juntos na prática. Com esse fluxo, você já consegue gerenciar um projeto simples usando Git.
 
-[⬅ voltar](4-Comandos-básicos.md)
-[avançar ➡](6-Github-Conceitos-e-finalidade.md)
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="4-Comandos-básicos.md">⬅ voltar</a>
+      </td>
+    <td align="center">
+      <a href="6-Github-Conceitos-e-finalidade.md">avançar ➡</a>
+    </td>
+  </tr>
+</table>

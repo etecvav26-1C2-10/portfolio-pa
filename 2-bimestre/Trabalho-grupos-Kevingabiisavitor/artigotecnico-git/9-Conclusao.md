@@ -14,5 +14,14 @@ Dessa forma, aprender Git e GitHub não é apenas uma habilidade técnica, mas t
 
 Por fim, dominar esses conceitos permite ao usuário desenvolver projetos de maneira mais organizada, segura e colaborativa, preparando-o para desafios maiores e para o crescimento contínuo na área de desenvolvimento.
 
-[⬅ voltar](8-Integracao-Git-e-GitHub.md)
-[avançar ➡](Q10-Referencias.md)
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="8-Integracao-Git-e-GitHub.md">⬅ voltar</a>
+      </td>
+    <td align="center">
+      <a href="Q10-Referencias.md">avançar ➡</a>
+    </td>
+  </tr>
+</table>

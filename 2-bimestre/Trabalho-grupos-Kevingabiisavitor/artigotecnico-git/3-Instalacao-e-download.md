@@ -79,5 +79,13 @@ O GitHub Desktop é atualizado automaticamente, mas você pode verificar manualm
 
 A instalação do GitHub Desktop é simples e rápida, sendo uma excelente ferramenta para desenvolvedores que desejam uma interface amigável para trabalhar com Git e GitHub.
 
-[⬅ voltar](2-Historico-e-contexto-do-git.md)
-[avançar ➡](4-Comandos-básicos.md)
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="2-Historico-e-contexto-do-git.md">⬅ voltar</a>
+      </td>
+    <td align="center">
+      <a href="4-Comandos-básicos.md">avançar ➡</a>
+    </td>
+  </tr>
+</table>

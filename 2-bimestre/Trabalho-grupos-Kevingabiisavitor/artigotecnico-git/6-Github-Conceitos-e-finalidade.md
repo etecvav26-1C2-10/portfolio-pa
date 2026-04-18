@@ -81,5 +81,13 @@ Um exemplo comum de uso:
 
 O GitHub é uma ferramenta essencial no mundo da tecnologia, pois facilita o armazenamento, a organização e a colaboração em projetos. Ele complementa o Git e se tornou um padrão no desenvolvimento moderno.
 
-[⬅ voltar](5-Exemplos-praticos.md)
-[avançar ➡](7-Criacao-de-conta.md)
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="5-Exemplos-praticos.md">⬅ voltar</a>
+      </td>
+    <td align="center">
+      <a href="7-Criacao-de-conta.md">avançar ➡</a>
+    </td>
+  </tr>
+</table>

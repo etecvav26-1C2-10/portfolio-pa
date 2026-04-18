@@ -111,5 +111,13 @@ Manter histórico de alterações sincronizado
 
 Com os comandos clone, push e pull, você já consegue realizar as operações mais comuns no dia a dia de desenvolvimento.
 
-[⬅ voltar](7-Criacao-de-conta.md)
-[avançar ➡](9-Conclusao.md)
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="7-Criacao-de-conta.md">⬅ voltar</a>
+      </td>
+    <td align="center">
+      <a href="9-Conclusao.md">avançar ➡</a>
+    </td>
+  </tr>
+</table>

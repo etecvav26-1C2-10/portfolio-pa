@@ -109,5 +109,13 @@ git commit: salva alterações
 git status: verifica o estado
 git log: visualiza o histórico
 
-[⬅ voltar](3-Instalacao-e-download.md)
-[avançar ➡](5-Exemplos-praticos.md)
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="3-Instalacao-e-download.md">⬅ voltar</a>
+      </td>
+    <td align="center">
+      <a href="5-Exemplos-praticos.md">avançar ➡</a>
+    </td>
+  </tr>
+</table>

@@ -82,4 +82,8 @@ O push envia as alterações feitas no seu repositório local para o repositóri
 
 O Git é uma ferramenta fundamental no desenvolvimento moderno, pois proporciona organização, controle e colaboração eficiente. Dominar seus conceitos básicos é essencial para qualquer pessoa que deseja trabalhar com tecnologia e desenvolvimento de software.
 
-[avançar ➡](2-Historico-e-contexto-do-git.md)
+<table align="center">
+<td>
+<a href="2-Historico-e-contexto-do-git.md">avançar ➡</a>
+</td>
+</table>

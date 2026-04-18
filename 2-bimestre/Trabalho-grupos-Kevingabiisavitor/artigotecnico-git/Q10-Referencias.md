@@ -32,4 +32,8 @@ As referências usadas para a criação deste artigo foram:
      
         link: https://www.theodinproject.com
 
-[⬅ voltar](Q10-Referencias.md)
+<table align="center">
+<td>
+<a href="9-Conclusao.md">⬅ voltar</a>
+</td>
+</table>
