@@ -1,3 +1,6 @@
+/* autor: Gabriely S. Alves
+ * descrição */
+
 #include <iostream>
 using namespace std;
 
