@@ -1,4 +1,4 @@
-## portfolio-pa
+# portfolio-pa
 ---
 <h1>Bem-vindo ao portifolio-pa</h1>
 <p>Este portfólio reúne atividades desenvolvidas por nós na disciplina de Programação e Algoritmos (PA), utilizando Portugol como principal ferramenta de aprendizado.
