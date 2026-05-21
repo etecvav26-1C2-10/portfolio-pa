@@ -6,19 +6,19 @@
 int main() {
     std::string pav, inver; 
     
-    std::cout << "Digite uma palavra: ";
+    std::cout << "Digite uma palavra: ";    
     std::cin >> pav;
     
     inver = pav; 
     
-    std::reverse(inver.begin(), inver.end());{
-        if (pav == inver){
+    std::reverse(inver.begin(), inver.end());{  //Inversão da ordem
+        if (pav == inver){                      //Verificação se sim
             std::cout << "è um palindromo";
         }
-        else {
+        else {  //Verificação se não
             std::cout << "não é palindromo";
-        }
-    }
+        }   
+    }   //Fim da verificação
     
     return 0;
 }
