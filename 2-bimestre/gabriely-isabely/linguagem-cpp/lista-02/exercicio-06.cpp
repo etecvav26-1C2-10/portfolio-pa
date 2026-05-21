@@ -1,7 +1,12 @@
 /* Descrição: Ler um número. Exibir o dia da semana correspondente*/
 #include <iostream>
+<<<<<<< HEAD
 #include <string>
 using namespace std;
+=======
+using namespace std;
+#include <string>
+>>>>>>> 915d1cdffc436369e66eba8b51375589b757746c
 
 string diaDaSemana(int numero)
 {
@@ -35,4 +40,8 @@ int main() {
     cout << "O dia da semana é: " << diaDaSemana(numero) << endl;
 
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 915d1cdffc436369e66eba8b51375589b757746c
