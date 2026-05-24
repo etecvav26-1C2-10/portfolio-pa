@@ -1,6 +1,10 @@
-//6) Ler um número.
-//Exibir o dia da semana correspondente.
-//➡️ Criar uma função para essa verificação.
+/*Exercício 6
+Autor: Kevin Silva Fernandes
+Turma: 1ºC2
+ETEC Vasco Antônio Venchiarutti
+enunciado: 6) Ler um número.
+Exibir o dia da semana correspondente.
+➡️ Criar uma função para essa verificação.*/
 #include <iostream>
 
 using namespace std;

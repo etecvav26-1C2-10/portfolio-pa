@@ -1,5 +1,13 @@
-//10) Ler um nome completo.
-//Exibir:Quantidade de vogais, Quantidade de consoantes
+/*Exercício 10
+Autor: Kevin Silva Fernandes
+Turma: 1ºC2
+ETEC Vasco Antônio Venchiarutti
+enunciado:10) Ler um nome completo.
+Exibir:
+
+Quantidade de vogais
+Quantidade de consoantes
+➡️ Criar funções separadas para cada contagem*/
 #include <iostream>
 #include <string>
 #include <cctype>

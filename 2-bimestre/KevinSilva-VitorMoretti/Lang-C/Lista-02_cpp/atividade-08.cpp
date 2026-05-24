@@ -1,5 +1,11 @@
-//8) Ler o raio de 5 círculos.
-// Calcular e exibir a soma das áreas.
+/*Exercício 8
+Autor: Kevin Silva Fernandes
+Turma: 1ºC2
+ETEC Vasco Antônio Venchiarutti
+enunciado:
+8) Ler o raio de 5 círculos.
+Calcular e exibir a soma das áreas.
+➡️ Criar uma função para calcular a área do círculo.*/
 #include <iostream>
 # include <cmath>
 int main() {

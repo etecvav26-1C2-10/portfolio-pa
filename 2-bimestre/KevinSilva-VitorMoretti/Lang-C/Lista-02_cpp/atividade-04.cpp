@@ -1,3 +1,15 @@
+/*Exercício 4
+Autor: Kevin Silva Fernandes
+Turma: 1ºC2
+ETEC Vasco Antônio Venchiarutti
+enunciado:
+4) Ler dois números inteiros e calcular:
+
+Adição
+Subtração
+Multiplicação
+Divisão
+➡️ Criar uma função para cada operação.*/
 #include <iostream>
 #include <cmath>
 

@@ -1,9 +1,12 @@
-/*12) Ler 15 números em um vetor.
+/*Exercício 12
+Autor: Kevin Silva Fernandes
+Turma: 1ºC2
+ETEC Vasco Antônio Venchiarutti
+enunciado:12) Ler 15 números em um vetor.
 Contar e exibir:
 
-    Quantidade de pares
-    Quantidade de ímpares
-*/
+Quantidade de pares
+Quantidade de ímpares*/
 #include <iostream>
 
 int main() {

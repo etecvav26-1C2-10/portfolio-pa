@@ -1,3 +1,11 @@
+/*Exercício 2
+Autor: Kevin Silva Fernandes
+Turma: 1ºC2
+ETEC Vasco Antônio Venchiarutti
+enunciado:
+2) Ler a base e o expoente.
+Calcular a potência usando repetição.
+➡️ Criar uma função para o cálculo.*/
 #include <iostream>
 
 long long potencia(int base, int expoente) {
