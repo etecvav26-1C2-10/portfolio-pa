@@ -11,11 +11,20 @@ Além disso, o trabalho em grupo contribuiu para o desenvolvimento da colaboraç
 
 Este portfólio representa nosso aprendizado, dedicação e crescimento na área de programação.</p>
 ---
+## 👥 Integrantes
+
+| Nome | GitHub |
+|------|--------|
+| Gabriel | [@chuuyaswine](https://github.com/chuuyaswine) |
+| Isa | [@lunarcommit](https://github.com/lunarcommit) |
+| Kevin | [@Kevin645757hfh](https://github.com/Kevin645757hfh) |
+| Vitor | [@vitor-moretti](https://github.com/vitor-moretti) |
+---
 ## Plataforma sendo utilizada:
 <p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="60"/>
 </p>
-
+---
 # 📋 Cronograma - 2º Bimestre
 
 | Menção | Tipo | Atividade | Data Entrega | Link | Obs |
