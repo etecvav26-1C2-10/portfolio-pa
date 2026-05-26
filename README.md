@@ -24,7 +24,9 @@ Este portfólio representa nosso aprendizado, dedicação e crescimento na área
 <p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="60"/>
 </p>
+
 ---
+
 # 📋 Cronograma - 2º Bimestre
 
 | Menção | Tipo | Atividade | Data Entrega | Link | Obs |
