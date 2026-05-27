@@ -1,3 +1,10 @@
+/*Exercício 20
+Autor: Kevin Silva Fernandes
+Turma: 1ºC2
+ETEC Vasco Antônio Venchiarutti
+enunciado:20) Ler 10 números em um vetor.
+Exibir o terceiro menor valor.
+*/
 #include <iostream>
 
 int main() {
