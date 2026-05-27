@@ -15,7 +15,7 @@ Este portfólio representa nosso aprendizado, dedicação e crescimento na área
 
 | Nome | GitHub |
 |------|--------|
-| Gabriel | [@chuuyaswine](https://github.com/chuuyaswine) |
+| Gabriely | [@chuuyaswine](https://github.com/chuuyaswine) |
 | Isa | [@lunarcommit](https://github.com/lunarcommit) |
 | Kevin | [@Kevin645757hfh](https://github.com/Kevin645757hfh) |
 | Vitor | [@vitor-moretti](https://github.com/vitor-moretti) |
