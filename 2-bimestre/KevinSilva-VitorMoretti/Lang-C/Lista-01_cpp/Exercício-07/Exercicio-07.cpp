@@ -6,17 +6,17 @@ Calcular e exibir a altura média de todas as pessoas. */
 using namespace std;
 
 int main() {
-    int pessoas;
-    float altura;
-    float media;
-    float soma = 0;
+    int pessoas; /*variavel para números inteiros*/
+    float altura; /*Variavel para números com vírgula*/
+    float media; /*Variavel para números com vírgula*/
+    float soma = 0; /*Variavel para números com vírgula*/
     cout << "Digite a quantidade de pessoas: ";
     cin >> pessoas;
     
-    for (int i = 1; i <= pessoas; i++) {
+    for (int i = 1; i <= pessoas; i++) { /*Enquanto i for menor ou igual ao número de pessoas, o programa vai exibir a mensagem de altura*/
     cout << "Digite a altura da pessoa " << i << ": ";
     cin >> altura;
-    soma = soma + altura;
+    soma = soma + altura; /*aqui o programa vai fazer a adição de cada altura digitada pelo usuario*/
     }
     
     media = soma / pessoas;

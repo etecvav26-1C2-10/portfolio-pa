@@ -7,19 +7,19 @@
 using namespace std;
 
 int main() {
-    float numero, soma = 0;
+    float numero, soma = 0; /*Cria uma variavel que lê números decimais*/
 
-    cout << "Digite um numero: ";
+    cout << "Digite um numero: "; /*Exibe uma mensagem na tela e logo em seguida lê ela*/
     cin >> numero;
 
-    while (numero >= 0) {
+    while (numero >= 0) { /*Enquanto o numero for maior ou igual a 0 (não sendo um número negativo) o programa vai fazer a soma dos números até que seja digitado um numero negativo*/
         soma = soma + numero;
 
         cout << "Digite um numero: ";
         cin >> numero;
     }
 
-    cout << "A soma dos numeros e: " << soma << endl;
+    cout << "A soma dos numeros e: " << soma << endl; /*Exibe a soma*/
 
     return 0;
 }
