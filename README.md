@@ -33,4 +33,5 @@ Este portfólio representa nosso aprendizado, dedicação e crescimento na área
 |---|---|---|---|---|---|
 | M1 | Lista de Exercícios (L1) | ATV-CPP-001-lista-execicios.md | 07/05/2026 | [Abrir](https://github.com/zahroniel-syrran/syrran-tech-academy/blob/main/atividades/cpp/ATV-CPP-001-lista-execicios.md) | |
 | M2 | Lista de Exercícios (L2) | ATV-CPP-002-lista-execicios.md | 11/06/2026 | [Abrir](https://github.com/zahroniel-syrran/syrran-tech-academy/blob/main/atividades/cpp/ATV-CPP-002-lista-execicios.md) | |
-| M3 | Portfólio | Análise do Github do grupo (1BIM e 2BIM) | 18/04/2026 | [Abrir](https://github.com/ronildo-ferreira/ronildo-human-layer/tree/main/01-EtecVAV/1C2/pa-progamacao-e-algoritmos/2BIM) | |
+| M3 | Desafio | Desafio em C++ | 16/06/2026 | [Abrir](https://olimpiada.ic.unicamp.br/pratique/p1/2021/f1/tempo/) | |
+| M4 | Portfólio | Análise do Github do grupo (1BIM e 2BIM) | 18/04/2026 | [Abrir](https://github.com/ronildo-ferreira/ronildo-human-layer/tree/main/01-EtecVAV/1C2/pa-progamacao-e-algoritmos/2BIM) | |
