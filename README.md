@@ -1,6 +1,6 @@
 # portfolio-pa
 ---
-<h1>Bem-vindo ao portifolio-pa</h1>
+<h1> 👋 Bem-vindo ao portifolio-pa</h1>
 <p>Este portfólio reúne atividades desenvolvidas por nós na disciplina de Programação e Algoritmos (PA), utilizando Portugol como principal ferramenta de aprendizado.
 
 Ao longo dos exercícios, trabalhamos conceitos fundamentais da lógica de programação, como variáveis, estruturas condicionais, laços de repetição e construção de algoritmos. As atividades mostram nossa evolução no raciocínio lógico, na organização das ideias e na resolução de problemas de forma clara e estruturada.
@@ -20,7 +20,7 @@ Este portfólio representa nosso aprendizado, dedicação e crescimento na área
 | Kevin | [@Kevin645757hfh](https://github.com/Kevin645757hfh) |
 | Vitor | [@vitor-moretti](https://github.com/vitor-moretti) |
 ---
-## Plataforma sendo utilizada:
+## 💻 Plataforma sendo utilizada:
 <p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="60"/>
 </p>
