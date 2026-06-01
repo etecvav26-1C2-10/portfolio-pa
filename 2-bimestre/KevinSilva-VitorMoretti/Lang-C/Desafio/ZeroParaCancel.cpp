@@ -2,23 +2,32 @@
 #include <iostream>
 
 int main(){
-	int N, x[N], soma;
 	
-	std::cout << "Digite as entradas: ";
+	//Entrada
+	int N, x, soma=0, anterior = 0;
+	
+	std::cout << "Digite a quantidade entradas: ";
 	std::cin >> N;
 	
+	std::cout << "\nDigite os numeros:\n";
+	
+	//operação
 	for(int i=0; i < N; i++){
 		std::cout << "";
-		std::cin >> x[N];
+		std::cin >> x;
 		
-		if(x[N] > 0){
-		soma += x[N];
+		if(x > 0){
+			soma += x;
+			anterior = x;
 		}
-		else if(x[N] = 0){
-		soma -= soma;
-	}
-	}
-		
+		else if(x = 0){
+			soma -= anterior;
+			anterior = 0;
+		}
+	}	
+	
+	//saída
 	std::cout << "\n" << soma << std::endl;
 	
+	return 0;
 }
