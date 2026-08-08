@@ -1,9 +1,8 @@
-<p>Código</p>
-
-```cpp
+/*
 Autor: Kael Elodie Whitmore
 Data: Junho/2026
 Descrição: Lê dois números inteiros e informa qual é o maior ou se são iguais.
+*/
 
 #include <iostream>
 using namespace std;
@@ -32,4 +31,3 @@ int main() {
 
     return 0;
 }
-```
