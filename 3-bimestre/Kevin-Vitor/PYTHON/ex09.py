@@ -6,6 +6,7 @@
     DESCRIÇÃO: Calcula o fatorial de um número inteiro positivo.
 
 '''
+#exibe a mensagem e lê a resposta do usuario
 num = int (input ("Digite um número inteiro positivo: "))
 contador = 1
 fatorial = 1
