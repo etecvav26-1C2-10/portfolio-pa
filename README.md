@@ -32,4 +32,6 @@ Este portfólio representa nosso aprendizado, dedicação e crescimento na área
 | Menção | Tipo | Atividade | Data Entrega | Link | Obs |
 |---|---|---|---|---|---|
 | M1 | Lista de Exercícios | atividades python | 13/08/2026 | [Abrir](https://github.com/ronildo-ferreira/ronildo-human-layer/blob/main/universe-zaion/episodio/03-apresentacao/lista-exercicio-cpp-para-python.md) | |
+| M2 | Estudo de caso | Após testar o "Sistema Lanchonete", a turma A irá implementar:Alterar preço de produto; Remover produto; Pesquisar produto por nome; Relatório de vendas. A truma B irá implementar: Produto mais vendido; Total vendido no dia; Exportar relatório para CSV; Criar backup do arquivo JSON. Publicar no GitHub do grupo. | 24/09/26 | [Abrir](https://github.com/ronildo-ferreira/ronildo-human-layer/blob/main/universe-zaion/episodio/03-apresentacao/sistema-lanchonete-projeto.md) | |
+| M3 | Seminário | Apresentação do sistema. Dois alunos da turma A e dois da turma B irão apresentar o Sistema Lanchonete com todas as funcinalidades integradas. | 24/09/26 | | Os representates irão criar um repositório, público para o projeto. |
 | M4 | Portfólio | Análise do Github do grupo | 24/09/2026 | [Abrir](https://github.com/ronildo-ferreira/ronildo-human-layer/tree/main/01-EtecVAV/1C2/pa-progamacao-e-algoritmos/3BIM) | |
