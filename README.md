@@ -20,9 +20,9 @@ Este portfólio representa nosso aprendizado, dedicação e crescimento na área
 | Kevin | [@Kevin645757hfh](https://github.com/Kevin645757hfh) |
 | Vitor | [@vitor-moretti](https://github.com/vitor-moretti) |
 ---
-## 💻 Plataforma sendo utilizada:
+## 💻 linguagem sendo utilizada:
 <p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="60"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Python-logo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" width="50">
 </p>
 
 ---
