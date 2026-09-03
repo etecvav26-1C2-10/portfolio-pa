@@ -1,0 +1,17 @@
+{
+    "products": [
+        {
+            "code": "55",
+            "name": "aura",
+            "price": 67.0,
+            "stock": 2
+        },
+        {
+            "code": "44",
+            "name": "carrocs",
+            "price": 280.0,
+            "stock": 10000
+        }
+    ],
+    "orders": []
+}

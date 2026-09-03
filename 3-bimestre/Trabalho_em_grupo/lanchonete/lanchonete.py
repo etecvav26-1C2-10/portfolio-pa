@@ -2,6 +2,8 @@ import json
 import os
 import datetime
 import shutil
+import csv
+
 
 DATA_FILE = "lanchonete_dados.json"
 
@@ -124,7 +126,7 @@ def make_order():
 
 
 def list_orders():
-    if len(orders) == 0:
+    if not orders:
         print("Nenhum pedido realizado.")
         return
 
@@ -135,6 +137,72 @@ def list_orders():
         print(f"Quantidade: {order['quantity']}")
         print(f"Total: R$ {order['total']:.2f}")
         print("-" * 30)
+    
+
+def exportar_csv():
+    # Exportar produtos
+    with open("relatorio.csv", "w", newline="", encoding="utf-8-sig") as file:
+        campos = ["code", "name", "price", "stock"]
+
+        writer = csv.DictWriter(file, fieldnames=campos)
+        writer.writeheader()
+
+        for product in products:
+            writer.writerow(product)
+
+    # Exportar pedidos
+    with open("pedidos.csv", "w", newline="", encoding="utf-8-sig") as file:
+        campos = [
+            "customer_name",
+            "product_code",
+            "product_name",
+            "quantity",
+            "total"
+        ]
+
+        writer = csv.DictWriter(file, fieldnames=campos)
+        writer.writeheader()
+
+        for order in orders:
+            writer.writerow(order)
+
+    print("Arquivos CSV exportados com sucesso!")
+    print("-> produtos.csv")
+    print("-> pedidos.csv")
+
+
+def exibir_csv():
+    print("\n--- PRODUTOS.CSV ---")
+
+    if os.path.exists("produtos.csv"):
+        with open("produtos.csv", "r", encoding="utf-8-sig") as file:
+            reader = csv.DictReader(file)
+
+            for linha in reader:
+                print(
+                    f"Código: {linha['code']} | "
+                    f"Nome: {linha['name']} | "
+                    f"Preço: R$ {float(linha['price']):.2f} | "
+                    f"Estoque: {linha['stock']}"
+                )
+    else:
+        print("O arquivo produtos.csv não existe.")
+
+    print("\n--- PEDIDOS.CSV ---")
+
+    if os.path.exists("pedidos.csv"):
+        with open("pedidos.csv", "r", encoding="utf-8-sig") as file:
+            reader = csv.DictReader(file)
+
+            for linha in reader:
+                print(
+                    f"Cliente: {linha['customer_name']} | "
+                    f"Produto: {linha['product_name']} | "
+                    f"Quantidade: {linha['quantity']} | "
+                    f"Total: R$ {float(linha['total']):.2f}"
+                )
+    else:
+        print("O arquivo pedidos.csv não existe.")
 
 
 def show_menu():
@@ -143,9 +211,9 @@ def show_menu():
     print("2 - Listar produtos")
     print("3 - Fazer pedido")
     print("4 - Ver pedidos realizados")
-    print("5 - bakups")
-    print("6 - Sair")
-
+    print("5 - exportar")
+    print ("6 - produto mais vendido")
+    print("8 - Sair")
 
 def main():
     load_data()
@@ -163,26 +231,74 @@ def main():
         elif option == "4":
             list_orders()
         elif option == "5":
-            o1 = input ("1- fazer novo backup \n"
-            "2 - exibir backups passados \n"
-            "Escolha uma opção: ")
+            o1 = input(
+                "\n1 - Fazer novo backup"
+                "\n2 - Exibir backups passados"
+                "\n3 - Exportar para CSV"
+                "\n4 - Exibir CSV realizados"
+                "\nEscolha uma opção: "
+            )
+
             if o1 == "1":
-                origem = 'lanchonete_dados.json'
-                data_atual = datetime.date.today().strftime('%Y-%m-%d')
-                destino = f'../LANCHONETE/backups/backup_dados_{data_atual}.json'
+                origem = "lanchonete_dados.json"
 
-                    # Copia o arquivo
+                pasta = "backups"
+                os.makedirs(pasta, exist_ok=True)
+
+                data_atual = datetime.date.today().strftime("%Y-%m-%d")
+
+                destino = f"{pasta}/backup_dados_{data_atual}.json"
+
                 shutil.copy(origem, destino)
-                print('Backup realizado com sucesso!')
 
-            if o1 == "2":
-                
+                print("Backup realizado com sucesso!")
+
+            elif o1 == "2":
                 pasta = "backups"
 
-                for arquivo in os.listdir(pasta):
-                    print(arquivo)
+                if not os.path.exists(pasta):
+                    print("Nenhum backup realizado.")
+                else:
+                    arquivos = os.listdir(pasta)
 
-        elif option == "6":
+                    if not arquivos:
+                        print("Nenhum backup realizado.")
+                    else:
+                        print("\n--- Backups disponíveis ---")
+
+                        for arquivo in arquivos:
+                            print(arquivo)
+
+            elif o1 == "3":
+                exportar_csv()
+
+            elif o1 == "4":
+                exibir_csv()
+
+            else:
+                print("Opção inválida.")
+
+
+        elif option  == "6":
+            vendas = {}
+
+            for order in orders:
+                produto = order["product_name"]
+                quantidade = order["quantity"]
+
+                if produto in vendas:
+                    vendas[produto] += quantidade
+                else:
+                    vendas[produto] = quantidade
+
+                    mais_vendido = max(vendas, key=vendas.get)
+                    quantidade_vendida = vendas[mais_vendido]
+
+                    print("\n--- Produto mais vendido ---")
+                    print(f"Produto: {mais_vendido}")
+                    print(f"Quantidade vendida: {quantidade_vendida}")
+            
+        elif option == "7":
             save_data()
             print("Sistema encerrado.")
             break
