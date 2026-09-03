@@ -1,64 +1,17 @@
 {
     "products": [
         {
-            "code": "444",
-            "name": "rr",
-            "price": 66.0,
-            "stock": 4
+            "code": "66",
+            "name": "carroca",
+            "price": 280.0,
+            "stock": 1000
         },
         {
-            "code": "5656",
-            "name": "fhgb",
-            "price": 88.0,
-            "stock": 0
-        },
-        {
-            "code": "333",
-            "name": "ff",
-            "price": 78.0,
-            "stock": 0
-        },
-        {
-            "code": "333445",
-            "name": "ddd",
-            "price": 9000.0,
-            "stock": 9
-        },
-        {
-            "code": "222",
-            "name": "kibichinha",
-            "price": 55.0,
-            "stock": 0
+            "code": "67",
+            "name": "aura",
+            "price": 670.0,
+            "stock": 1
         }
     ],
-    "orders": [
-        {
-            "customer_name": "cdds",
-            "product_code": "5656",
-            "product_name": "fhgb",
-            "quantity": 99,
-            "total": 8712.0
-        },
-        {
-            "customer_name": "seu ze",
-            "product_code": "333",
-            "product_name": "ff",
-            "quantity": 6,
-            "total": 468.0
-        },
-        {
-            "customer_name": "ccc",
-            "product_code": "333445",
-            "product_name": "ddd",
-            "quantity": 3,
-            "total": 27000.0
-        },
-        {
-            "customer_name": "moretti",
-            "product_code": "222",
-            "product_name": "kibichinha",
-            "quantity": 100,
-            "total": 5500.0
-        }
-    ]
+    "orders": []
 }
