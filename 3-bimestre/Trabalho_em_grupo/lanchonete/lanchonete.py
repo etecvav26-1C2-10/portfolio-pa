@@ -28,8 +28,6 @@ def save_data():
     data = {
         "products": products,
         "orders": orders
-
-        
     }
 
     with open(DATA_FILE, "w", encoding="utf-8") as file:
@@ -79,6 +77,57 @@ def find_product_by_code(code):
         if product["code"] == code:
             return product
     return None
+
+
+def search_product_by_name():
+    name_query = input("Digite o nome (ou parte do nome) do produto: ").strip().lower()
+    
+    found = [p for p in products if name_query in p["name"].lower()]
+
+    if not found:
+        print("Nenhum produto encontrado com esse nome.")
+        return
+
+    print("\n--- Resultados da Busca ---")
+    for product in found:
+        print(f"Código: {product['code']}")
+        print(f"Nome: {product['name']}")
+        print(f"Preço: R$ {product['price']:.2f}")
+        print(f"Estoque: {product['stock']}")
+        print("-" * 30)
+
+
+def update_product_price():
+    code = input("Digite o código do produto cujo preço deseja alterar: ")
+    product = find_product_by_code(code)
+
+    if product is None:
+        print("Produto não encontrado.")
+        return
+
+    print(f"Produto atual: {product['name']} | Preço atual: R$ {product['price']:.2f}")
+    new_price = float(input("Digite o novo preço: "))
+
+    if new_price < 0:
+        print("O preço não pode ser negativo.")
+        return
+
+    product["price"] = new_price
+    save_data()
+    print("Preço atualizado com sucesso!")
+
+
+def remove_product():
+    code = input("Digite o código do produto que deseja remover: ")
+    product = find_product_by_code(code)
+
+    if product is None:
+        print("Produto não encontrado.")
+        return
+
+    products.remove(product)
+    save_data()
+    print("Produto removido com sucesso!")
 
 
 def make_order():
@@ -137,32 +186,35 @@ def list_orders():
         print(f"Quantidade: {order['quantity']}")
         print(f"Total: R$ {order['total']:.2f}")
         print("-" * 30)
-    
+
+
+def sales_report():
+    if not orders:
+        print("Nenhum relatório de vendas disponível (sem pedidos).")
+        return
+
+    total_faturamento = sum(order["total"] for order in orders)
+    total_itens = sum(order["quantity"] for order in orders)
+
+    print("\n--- Relatório de Vendas ---")
+    print(f"Total de pedidos realizados: {len(orders)}")
+    print(f"Total de itens vendidos: {total_itens}")
+    print(f"Faturamento total: R$ {total_faturamento:.2f}")
+    print("-" * 30)
+
 
 def exportar_csv():
-    # Exportar produtos
-    with open("relatorio.csv", "w", newline="", encoding="utf-8-sig") as file:
+    with open("produtos.csv", "w", newline="", encoding="utf-8-sig") as file:
         campos = ["code", "name", "price", "stock"]
-
         writer = csv.DictWriter(file, fieldnames=campos)
         writer.writeheader()
-
         for product in products:
             writer.writerow(product)
 
-    # Exportar pedidos
     with open("pedidos.csv", "w", newline="", encoding="utf-8-sig") as file:
-        campos = [
-            "customer_name",
-            "product_code",
-            "product_name",
-            "quantity",
-            "total"
-        ]
-
+        campos = ["customer_name", "product_code", "product_name", "quantity", "total"]
         writer = csv.DictWriter(file, fieldnames=campos)
         writer.writeheader()
-
         for order in orders:
             writer.writerow(order)
 
@@ -173,11 +225,9 @@ def exportar_csv():
 
 def exibir_csv():
     print("\n--- PRODUTOS.CSV ---")
-
     if os.path.exists("produtos.csv"):
         with open("produtos.csv", "r", encoding="utf-8-sig") as file:
             reader = csv.DictReader(file)
-
             for linha in reader:
                 print(
                     f"Código: {linha['code']} | "
@@ -189,11 +239,9 @@ def exibir_csv():
         print("O arquivo produtos.csv não existe.")
 
     print("\n--- PEDIDOS.CSV ---")
-
     if os.path.exists("pedidos.csv"):
         with open("pedidos.csv", "r", encoding="utf-8-sig") as file:
             reader = csv.DictReader(file)
-
             for linha in reader:
                 print(
                     f"Cliente: {linha['customer_name']} | "
@@ -209,11 +257,16 @@ def show_menu():
     print("\n=== Sistema para Lanchonete ===")
     print("1 - Cadastrar produto")
     print("2 - Listar produtos")
-    print("3 - Fazer pedido")
-    print("4 - Ver pedidos realizados")
-    print("5 - exportar")
-    print ("6 - produto mais vendido")
-    print("8 - Sair")
+    print("3 - Pesquisar produto por nome")
+    print("4 - Alterar preço de produto")
+    print("5 - Remover produto")
+    print("6 - Fazer pedido")
+    print("7 - Ver pedidos realizados")
+    print("8 - Backup e CSV")
+    print("9 - Produto mais vendido")
+    print("10 - Relatório de vendas")
+    print("0 - Sair")
+
 
 def main():
     load_data()
@@ -227,10 +280,16 @@ def main():
         elif option == "2":
             list_products()
         elif option == "3":
-            make_order()
+            search_product_by_name()
         elif option == "4":
-            list_orders()
+            update_product_price()
         elif option == "5":
+            remove_product()
+        elif option == "6":
+            make_order()
+        elif option == "7":
+            list_orders()
+        elif option == "8":
             o1 = input(
                 "\n1 - Fazer novo backup"
                 "\n2 - Exibir backups passados"
@@ -241,64 +300,53 @@ def main():
 
             if o1 == "1":
                 origem = "lanchonete_dados.json"
-
                 pasta = "backups"
                 os.makedirs(pasta, exist_ok=True)
-
                 data_atual = datetime.date.today().strftime("%Y-%m-%d")
-
                 destino = f"{pasta}/backup_dados_{data_atual}.json"
-
                 shutil.copy(origem, destino)
-
                 print("Backup realizado com sucesso!")
-
             elif o1 == "2":
                 pasta = "backups"
-
                 if not os.path.exists(pasta):
                     print("Nenhum backup realizado.")
                 else:
                     arquivos = os.listdir(pasta)
-
                     if not arquivos:
                         print("Nenhum backup realizado.")
                     else:
                         print("\n--- Backups disponíveis ---")
-
                         for arquivo in arquivos:
                             print(arquivo)
-
             elif o1 == "3":
                 exportar_csv()
-
             elif o1 == "4":
                 exibir_csv()
-
             else:
                 print("Opção inválida.")
 
+        elif option == "9":
+            if not orders:
+                print("Nenhum pedido realizado para calcular o mais vendido.")
+                continue
 
-        elif option  == "6":
             vendas = {}
-
             for order in orders:
                 produto = order["product_name"]
                 quantidade = order["quantity"]
+                vendas[produto] = vendas.get(produto, 0) + quantidade
 
-                if produto in vendas:
-                    vendas[produto] += quantidade
-                else:
-                    vendas[produto] = quantidade
+            mais_vendido = max(vendas, key=vendas.get)
+            quantidade_vendida = vendas[mais_vendido]
 
-                    mais_vendido = max(vendas, key=vendas.get)
-                    quantidade_vendida = vendas[mais_vendido]
+            print("\n--- Produto mais vendido ---")
+            print(f"Produto: {mais_vendido}")
+            print(f"Quantidade vendida: {quantidade_vendida}")
 
-                    print("\n--- Produto mais vendido ---")
-                    print(f"Produto: {mais_vendido}")
-                    print(f"Quantidade vendida: {quantidade_vendida}")
-            
-        elif option == "7":
+        elif option == "10":
+            sales_report()
+
+        elif option == "0":
             save_data()
             print("Sistema encerrado.")
             break
