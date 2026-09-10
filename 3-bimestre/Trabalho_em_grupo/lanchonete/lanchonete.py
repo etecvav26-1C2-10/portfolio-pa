@@ -159,18 +159,23 @@ def make_order():
     total = quantity * product["price"]
     product["stock"] -= quantity
 
+    # Registra a data e a hora do pedido
+    data_pedido = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+
     order = {
         "customer_name": customer_name,
         "product_code": product["code"],
         "product_name": product["name"],
         "quantity": quantity,
-        "total": total
+        "total": total,
+        "date": data_pedido
     }
 
     orders.append(order)
     save_data()
 
     print("Pedido realizado com sucesso!")
+    print(f"Data do pedido: {data_pedido}")
     print(f"Total: R$ {total:.2f}")
 
 
@@ -179,14 +184,19 @@ def list_orders():
         print("Nenhum pedido realizado.")
         return
 
-    print("\n--- Pedidos realizados ---")
-    for order in orders:
+    print("\n HISTÓRICO")
+
+    for i, order in enumerate(orders, start=1):
+        print(f"\nPedido nº {i}")
+        print(f"Data: {order.get('date', 'Data não registrada')}")
         print(f"Cliente: {order['customer_name']}")
         print(f"Produto: {order['product_name']}")
+        print(f"Código: {order['product_code']}")
         print(f"Quantidade: {order['quantity']}")
         print(f"Total: R$ {order['total']:.2f}")
-        print("-" * 30)
+        print("-" * 40)
 
+    print(f"\nTotal de pedidos registrados: {len(orders)}")
 
 def sales_report():
     if not orders:
