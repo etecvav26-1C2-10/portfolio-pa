@@ -81,3 +81,49 @@ def find_product_by_code(codigo):
         if produto["codigo"] == codigo:
             return produto
     return None
+
+def make_order():
+    if len(produtos) == 0:
+        print("NEnhum produtos cadastrado")
+        return
+    nome_cliente = input("\n Nome do cliente: ")
+
+    list_products()
+
+    codigo = input("Digite o código do produto: ")
+    produto = find_product_by_code(codigo)
+
+    if produto is None:
+        print("\n ESse produto não existe")
+        return
+
+    try:
+        quantidade = int(input("Digite a quantidade digitada: "))
+    except ValueError:
+        print("\n Quantidade invalida, digite  novamente.")
+
+
+    if quantidade <= 0:
+        print("Quantidade invalide")
+        return
+    if quantidade > produto["estoque"]:
+        print("Quantidade em estoque indisponivel")
+        return
+
+    total = quantidade * produto["preço"]
+
+    produto["estoque"] -= quantidade
+
+    pedido = {
+        "cliente_nome": nome_cliente,
+        "produto_codigo": produto["codigo"],
+        "produto_nome": produto["nome"],
+        "quantidade": quantidade,
+        "total": total
+    }
+
+    pedidos.append(produto)
+    save_data()
+
+    print("Pedido realizado com sucesso")
+    print("Total: R$ {total:.2f}")
