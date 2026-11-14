@@ -1,7 +1,7 @@
 import json
 import os
 
-DATA_FILE = "lojadejogos.json"
+DATA_FILE = "lojadejogosVTKF.json"
 
 produtos = []
 pedidos = []
@@ -48,13 +48,13 @@ def registra_produto():
         return
 
     produto = {
-        "código": codigo,
-        "nome":  nome,
-        "plataforma": plataforma,
-        "Classificação Etária": classificação,
-        "preço":  preco,
-        "estoque":  estoque
-    }
+    "codigo": codigo,
+    "nome": nome,
+    "plataforma": plataforma,
+    "classificacao": classificação,
+    "preço": preco,
+    "estoque": estoque
+}
     produtos.append(produto)
     save_data()
 
@@ -66,25 +66,26 @@ def list_products():
         return
 
     print("\n Produtos cadastrados ")
+
     for produto in produtos:
         print(f"Código: {produto['codigo']}")
         print(f"Nome: {produto['nome']}")
-        print(f"plataforma: {produto['plataforma']}")
-        print(f"CLassificação Etária: {produto['classificação']}")
+        print(f"Plataforma: {produto['plataforma']}")
+        print(f"Classificação Etária: {produto['classificacao']}")
         print(f"Preço: R$ {produto['preço']:.2f}")
         print(f"Estoque: {produto['estoque']}")
         print("-" * 30)
 
 
 def find_product_by_code(codigo):
-    for produto in produto:
+    for produto in produtos:
         if produto["codigo"] == codigo:
             return produto
     return None
 
 def make_order():
     if len(produtos) == 0:
-        print("NEnhum produtos cadastrado")
+        print("Nenhum produtos cadastrado")
         return
     nome_cliente = input("\n Nome do cliente: ")
 
@@ -101,6 +102,7 @@ def make_order():
         quantidade = int(input("Digite a quantidade digitada: "))
     except ValueError:
         print("\n Quantidade invalida, digite  novamente.")
+        return
 
 
     if quantidade <= 0:
@@ -122,8 +124,129 @@ def make_order():
         "total": total
     }
 
-    pedidos.append(produto)
+    pedidos.append(pedido)
     save_data()
 
     print("Pedido realizado com sucesso")
-    print("Total: R$ {total:.2f}")
+    print(f"Total: R$ {total:.2f}")
+
+def list_orders():
+    if len(pedidos) == 0:
+        print("Nenhum pedido realizado ")
+        return
+        
+    print("\n Pedidos:" )
+    for pedido in pedidos:
+        print(f"Cliente: {pedido['cliente_nome']}")
+        print(f"Produto: {pedido['produto_nome']}")
+        print(f"Quantidade: {pedido['quantidade']}")
+        print(f"Total: R$ {pedido['total']:.2f}")
+        print("-" * 30)
+
+def alter_product_price():
+    codigo = input ("\n Digite o código do produto para mudar o preço: ")
+    produto = find_product_by_code(codigo)
+
+    if produto is None:
+        print("O produto não existe.")
+        return
+
+    try:
+        novo_preco = float(input("Digite o novo preço: "))
+    except ValueError:
+        print("Preço inválido, tente novamente.")
+        return
+
+    produto["preço"] = novo_preco
+    save_data()
+    print("Preço do produto atualizado.")
+
+def remove_product():
+    codigo = input("\n Digite o código do produto para removê-lo: ")
+    produto = find_product_by_code(codigo)
+
+    if produto is None:
+        print("O produto não existe.")
+        return
+
+    produtos.remove(produto)
+    save_data()
+    print("\n Produto removido com sucesso.")
+
+def search_product_by_name():
+    nome = input("\n Digite o nome do produto: ")
+    encontrados = [produto for produto in produtos if nome.lower() in produto["nome"].lower()]
+
+    if len(pedidos) == 0:
+        print("Nenhuma venda realizada.")
+        return
+
+    print("\n Relatório de Vendas:")
+    for pedido in pedidos:
+        print(f"Cliente: {pedido['cliente_nome']}")
+        print(f"Produto: {pedido['produto_nome']}")
+        print(f"Quantidade: {pedido['quantidade']}")
+        print(f"Total: R$ {pedido['total']:.2f}")
+        print("-" * 30)
+
+
+def sales_report():
+    if len(pedidos) == 0:
+        print("Nenhuma venda realizada.")
+        return
+
+    print("\n Relatório de Vendas:")
+    for pedido in pedidos:
+        print(f"Cliente: {pedido['cliente_nome']}")
+        print(f"Produto: {pedido['produto_nome']}")
+        print(f"Quantidade: {pedido['quantidade']}")
+        print(f"Total: R$ {pedido['total']:.2f}")
+        print("-" * 30)
+
+
+def show_menu():
+    print("\n Loja de jogos \n")
+    print("1 - Cadastrar produto")
+    print("2 - Ver produtos")
+    print("3 - Fazer pedido")
+    print("4 - Ver pedidos realizados")
+    print("5 - Mudar preço do produto")
+    print("6 - Remover produto")
+    print("7 - Pesquisar produto por nome")
+    print("8 - Relatório de vendas")
+    print("0 - Sair")
+
+def main():
+    load_data()
+
+
+    while True:
+        show_menu()
+        opcao = input("\n Escolha uma opção: ").strip()
+        print("Você digitou:", repr(opcao))
+
+        match opcao:
+            case '1':
+                registra_produto()
+            case '2':
+                list_products()
+            case '3':
+                make_order()
+            case '4':
+                list_orders()
+            case '5':
+                alter_product_price()
+            case '6':
+                remove_product()
+            case '7':
+                search_product_by_name()
+            case '8':
+                sales_report()
+            case '0':
+                save_data()
+                print("\n Sistema encerrado, até a próxima. ")
+                break
+            case _:
+                print ("opção inválida, tente novamente ")
+
+main()
