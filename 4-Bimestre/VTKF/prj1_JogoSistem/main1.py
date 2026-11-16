@@ -1,3 +1,12 @@
+"""
+
+Feito Por: Kevin Silva Fernandes, Vitor Paulielo Moretti
+Turma: 1ºc2
+Descrição: Sistema python de registro de vendas de uma loja de videogames
+Declaração do uso de IA: Sim (auxilio e reparo de erros)
+
+"""
+
 import json
 import os
 
@@ -75,7 +84,6 @@ def list_products():
         print(f"Preço: R$ {produto['preço']:.2f}")
         print(f"Estoque: {produto['estoque']}")
         print("-" * 30)
-
 
 def find_product_by_code(codigo):
     for produto in produtos:
@@ -189,7 +197,6 @@ def search_product_by_name():
         print(f"Total: R$ {pedido['total']:.2f}")
         print("-" * 30)
 
-
 def sales_report():
     if len(pedidos) == 0:
         print("Nenhuma venda realizada.")
@@ -202,7 +209,6 @@ def sales_report():
         print(f"Quantidade: {pedido['quantidade']}")
         print(f"Total: R$ {pedido['total']:.2f}")
         print("-" * 30)
-
 
 def show_menu():
     print("\n Loja de jogos \n")
@@ -250,3 +256,5 @@ def main():
                 print ("opção inválida, tente novamente ")
 
 main()
+
+

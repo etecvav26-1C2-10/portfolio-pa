@@ -1,0 +1,21 @@
+{
+    "produtos": [
+        {
+            "codigo": "24",
+            "nome": "GTA Vice City",
+            "plataforma": "PS3",
+            "classificacao": 18,
+            "preço": 40.0,
+            "estoque": 6700
+        }
+    ],
+    "pedidos": [
+        {
+            "cliente_nome": "Moretti Vinagretti",
+            "produto_codigo": "24",
+            "produto_nome": "GTA Vice City",
+            "quantidade": 67,
+            "total": 2680.0
+        }
+    ]
+}
